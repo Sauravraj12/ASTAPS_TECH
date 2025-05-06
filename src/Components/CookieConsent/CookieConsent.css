@@ -1,0 +1,44 @@
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .cookie-banner p {
+    margin: 0;
+    flex: 1 0 60%;
+    padding: 0.5rem;
+  }
+  
+  .cookie-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .accept-btn, .decline-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .accept-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .decline-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  

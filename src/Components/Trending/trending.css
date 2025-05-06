@@ -1,0 +1,119 @@
+.trending-courses {
+  padding: 2rem;
+  background-color: #f8f9fa;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .courses-container {
+    padding: 0px 60px 0px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+  }
+
+  .main-course-card {
+    flex: 1 1 30%;
+     background: linear-gradient(to right, #1e3c72, #2a5298);
+     display: inline-table;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    gap: 4rem;
+
+    .animation {
+      width: 40%;
+      max-width: 300px;
+    }
+
+    .course-info {
+      flex: 1;
+
+      h3 {
+    
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: White;
+      }
+
+      p {
+        font-size: 1rem;
+        color: black;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        padding: 0.6rem 1.2rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+
+  .side-courses {
+    flex: 1 1 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .side-course {
+      text-align: center;
+      background: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      span {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        color: Black;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .courses-container {
+      flex-direction: column;
+    }
+
+    .main-course-card,
+    .side-courses {
+      flex: 1 1 100%;
+    }
+
+    .main-course-card {
+      flex-direction: column;
+      text-align: center;
+
+      .animation {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

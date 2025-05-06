@@ -1,0 +1,175 @@
+
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+.card {
+  background-color: lightseagreen;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 360px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-Title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .animationData {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .animation {
+      width: 100%;
+      max-width: 220px;
+    }
+  }
+
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+
+    .btn {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .brochure-btn {
+      background-color: #f4a261;
+      border: none;
+      color: #000;
+
+      &:hover {
+        background-color: #e57c1e;
+      }
+    }
+
+    .explore-btn {
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #000;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.about-banner {
+  padding: 0px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+
+  .about-content {
+    h1 {
+      color: white;
+      font-weight: bold;
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #ccc;
+    }
+  }
+}
+.course-detail {
+  padding: 2rem;
+  background: #f8f8f8;
+
+  .course-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #004a87;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+
+    .course-text {
+      flex: 1;
+      margin-right: 2rem;
+
+      .buttons {
+        margin-top: 1rem;
+
+        .btn {
+          margin-right: 1rem;
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .download {
+          background-color: #ffaa64;
+          color: black;
+        }
+
+        .contact, .enroll {
+          background-color: white;
+          color: #004a87;
+        }
+      }
+    }
+
+    .course-image img {
+      width: 400px;
+      border-radius: 10px;
+    }
+  }
+
+  .course-body {
+    margin-top: 2rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+
+      .table-of-contents, .course-details {
+        flex: 1;
+        margin: 1rem;
+      }
+
+      p {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

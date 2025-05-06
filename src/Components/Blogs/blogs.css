@@ -1,0 +1,263 @@
+/* .blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 20px;
+    /* background: linear-gradient(to right, #b6f0e4, #a6c1ee); */
+    /* flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .blog-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 320px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .blog-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .category {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .category.technology {
+    background-color: #3b82f6;
+  }
+  
+  .category.food {
+    background-color: #facc15;
+    color: #333;
+  }
+  
+  .category.automobile {
+    background-color: #ef4444;
+  }
+  
+  .blog-content h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #111;
+  }
+  
+  .blog-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .author-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .author-info h5 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .author-info span {
+    font-size: 12px;
+    color: #777;
+  }
+    */
+
+    .blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 80px 40px 40px 40px;
+}
+.blog-header{
+  text-align: center;
+  color: black;
+  background-color: #d0e6ff;
+  height: 300px;
+}
+.blog-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.category {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  background-color: #eee;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.author-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.read-more-btn {
+  margin-top: 15px;
+  padding: 8px 14px;
+    background-color: lightseagreen;
+  
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #002d5a;
+}
+
+/* Optional: category-specific colors */
+.category.technology { background-color: #d0e6ff; color: #004080; }
+.category.food { background-color: #ffe5b4; color: #8a4b00; }
+.category.automobile { background-color: #e6ffe6; color: #006600; }
+
+@media (max-width: 1024px) {
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+}
+.blog-detail {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background: #f9f9f9;
+
+  .about-banner {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+
+    .about-content {
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #e0e0e0;
+      }
+    }
+  }
+
+  .blog-detail-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+
+      .category {
+        background: #efefef;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-weight: 500;
+      }
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .author-detail {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 1rem;
+      }
+
+      h4 {
+        margin: 0;
+        color: #444;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+/* .footer{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #797979;
+    padding: 15px 0;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* ------ media query ---------- */
+/* @media (max-width: 600px){
+
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer ul li{
+        margin: 10px;
+    }
+    .footer ul{
+        margin-top: 10px;
+    }
+} */ 
+
+.footer {
+    background: linear-gradient(to right, #9333ea, #ec4899);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    overflow: hidden;
+    
+    width: 100%;
+    padding: 60px,0px 0px 0px;
+  }
+  
+  .footer-wave {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-bottom-left-radius: 50% 40px;
+    border-bottom-right-radius: 50% 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 10px;
+  }
+  
+  .footer-section h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .footer-section p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 8px 0;
+    /* flex-direction: column;
+    display: flex; */
+
+  }
+
+  .footer-section li {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 8px 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    font-size: 14px;
+    padding: 20px 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.93);
+    background: rgba(0, 0, 0, 0.05);
+    .footer-link:hover{
+      color: blue;
+         text-decoration: red underline;
+    }
+  }
+  

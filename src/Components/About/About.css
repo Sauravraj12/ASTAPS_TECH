@@ -1,0 +1,244 @@
+.about-banner {
+  padding-top: 70px;
+  height: 270px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #d4fc79, #fbc2eb);
+  position: relative;
+  color: white;
+  text-align: center;
+
+  .about-content {
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+  }
+}
+
+.about {
+  padding: 20px 40px 40px 40px;
+
+  .about-top {
+    background-color: #d4fc79;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    .about-left,
+    .about-right {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .about-left {
+      position: relative;
+
+      .about-img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .play-icon {
+        width: 60px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .about-right {
+      h3 {
+        font-size: 30px;
+        color: #0b3d91;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 35px;
+        color: #000f38;
+        max-width: 400px;
+      }
+
+      p {
+        margin-bottom: 15px;
+        color: #676767;
+      }
+
+      .about-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #0b3d91;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: #1d4ed8;
+        }
+      }
+    }
+  }
+
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+    column-gap: 225px;
+
+    &.mission {
+      .section-text {
+        order: 1;
+      }
+      .section-img {
+        order: 2;
+      }
+    }
+
+    &.vision {
+      .section-text {
+        order: 2;
+      }
+      .section-img {
+        order: 1;
+      }
+    }
+
+    .section-text {
+      flex: 1;
+      padding: 20px;
+
+      h2 {
+        color: #0b3d91;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        color: #333;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+
+    .section-img {
+      flex: 1;
+      padding: 20px;
+      width: 300px;
+      height: 300px;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .animation1 {
+        width: 400px;
+        height: 150px;
+      }
+    }
+  }
+
+  .founders-section {
+    padding: 60px 40px;
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .founder-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+
+      .founder-card {
+        background-color: #f4f4f4;
+        color: #000;
+        border-radius: 20px;
+        padding: 30px 20px;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        .founder-img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 15px;
+        }
+
+        h3 {
+          margin-bottom: 5px;
+        }
+
+        .title {
+          color: #666;
+          font-size: 0.95rem;
+          margin: 5px 0;
+        }
+
+        .quote {
+          font-style: italic;
+          font-size: 0.9rem;
+          margin: 10px 0;
+        }
+
+        .linkedin-icon {
+          width: 25px;
+          height: 25px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .about-top {
+      flex-direction: column;
+
+      .about-left,
+      .about-right {
+        flex-basis: 100%;
+      }
+
+      .about-left {
+        margin: 20px;
+        order: 0;
+      }
+    }
+
+    .about-section {
+      flex-direction: column;
+    }
+  }
+}
